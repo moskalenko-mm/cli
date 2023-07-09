@@ -26,6 +26,7 @@ async function invokeAction({ action, id, name, email, phone }) {
 
       case "remove":
         const delContacts = await removeContact(id);
+        console.log(delContacts);
         break;
 
       default:
